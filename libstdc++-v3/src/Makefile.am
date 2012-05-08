@@ -407,7 +407,7 @@ AM_CXXFLAGS = \
 	$(XTEMPLATE_FLAGS) \
 	$(WARN_CXXFLAGS) \
 	$(OPTIMIZE_CXXFLAGS) \
-	$(CONFIG_CXXFLAGS)
+	$(CONFIG_CXXFLAGS) -flto
 
 
 # libstdc++ libtool notes
