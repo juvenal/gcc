@@ -123,7 +123,7 @@ compatibility-thread-c++0x.o: compatibility-thread-c++0x.cc
 # as the occasion calls for it.
 AM_CXXFLAGS = \
 	$(XTEMPLATE_FLAGS) \
-	$(WARN_CXXFLAGS) $(OPTIMIZE_CXXFLAGS) $(CONFIG_CXXFLAGS)
+	$(WARN_CXXFLAGS) $(OPTIMIZE_CXXFLAGS) -flto $(CONFIG_CXXFLAGS)
 
 # Libtool notes
 

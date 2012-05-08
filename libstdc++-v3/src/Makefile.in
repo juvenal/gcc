@@ -381,7 +381,7 @@ PARALLEL_FLAGS = -fopenmp -D_GLIBCXX_PARALLEL -I$(glibcxx_builddir)/../libgomp
 # as the occasion calls for it.
 AM_CXXFLAGS = \
 	$(XTEMPLATE_FLAGS) \
-	$(WARN_CXXFLAGS) $(OPTIMIZE_CXXFLAGS) $(CONFIG_CXXFLAGS)
+	$(WARN_CXXFLAGS) $(OPTIMIZE_CXXFLAGS) -flto $(CONFIG_CXXFLAGS)
 
 
 # Libtool notes
